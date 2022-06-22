@@ -1,19 +1,32 @@
-.xls-container {
-    display: flex;
-    height: 2.5rem;
-    line-height: 2.2rem;
-    padding-left: 20%;
+* {
+    font-family: Arial;
+    color: #282c34;
+
 }
 
-.browse-button {
-    position: relative;
-    color: white;
-    background-color: #17a2b8;
-    border: 1px solid #17a2b8;
-    border-radius: 5px 0px 0px 5px;
-    font-size: 18px;
-    font-weight: 400;
-    width: 5rem;
-    text-align: center;
+.xls-container {
+    padding-left: 10%;
+}
 
-    }
+h3 {
+    font-family: Arial;
+    font-weight: 750;
+}
+
+.browse-container {
+    background-color: #e9ecef;
+    width: 25rem;
+}
+
+input {
+    display: none;
+}
+
+.file-upload {
+    border: 1px solid #282c34;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    background-color: #e9ecef;
+
+}

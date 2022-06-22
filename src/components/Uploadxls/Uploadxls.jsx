@@ -33,49 +33,40 @@ const Uploadxls = () => {
     };
 
     const fileData = () => {
-
-
-            if (selectedFile) {
-
-                return (
-
-                    <div>
-                        <h2>File Details:</h2>
-                        <p>File Name: {selectedFile.selectedFile.name}</p>
-
-                    </div>
-                );
-            } else {
-                return (
-                    <div>
-                        <br/>
-                        <h4>Choose before Pressing the Upload button</h4>
-                    </div>
-                );
-            }
+        if (selectedFile) {
+            return (
+                <div>
+                    <h3>File Details:</h3>
+                    <p>File Name: {selectedFile.selectedFile.name}</p>
+                </div>
+            );
+        } else {
+            return (
+                <div>
+                    <br/>
+                    <h4>Choose before Pressing the Upload button</h4>
+                </div>
+            );
         }
-    ;
+    };
 
-    console.log(selectedFile);
-
+    console.log(selectedFile)
 
     return (
-        <div>
-            <h1>
-                GeeksforGeeks
-            </h1>
+        <div className={"xls-container"}>
             <h3>
-                File Upload using React!
+                Upload file
             </h3>
-            <div>
-                <input type="file" onChange={onFileChange}/>
-                <button onClick={onFileUpload}>
-                    Upload!
-                </button>
-            </div>
+            <label className={"file-upload"}>
+                <input
+                    type="file" onChange={onFileChange}/>
+                Browse
+            </label>
             {fileData()}
+            <button onClick={onFileUpload}>
+                Upload!
+            </button>
         </div>
-
     )
 }
 
