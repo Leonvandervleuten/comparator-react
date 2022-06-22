@@ -1,0 +1,19 @@
+.xls-container {
+    display: flex;
+    height: 2.5rem;
+    line-height: 2.2rem;
+    padding-left: 20%;
+}
+
+.browse-button {
+    position: relative;
+    color: white;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 5rem;
+    text-align: center;
+
+    }

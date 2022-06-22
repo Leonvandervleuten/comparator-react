@@ -1,0 +1,23 @@
+layout-container {
+    height: 100vh;
+    max-width: 1900px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.layout-container > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+.layout-container .page-body {
+    flex: 0 0 auto;
+    width: 92%;
+}
